@@ -44,13 +44,32 @@ android {
 //            storePassword rootProject.ext.keyStorePassword
 //        }
 //    }
+    signingConfigs {
+        release {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('../signApk/giftedcat.jks')
+            storePassword '123456'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+
+        debug {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('../signApk/giftedcat.jks')
+            storePassword '123456'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
 
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-//            signingConfig signingConfigs.release
+            signingConfig signingConfigs.release
 
             applicationVariants.all { variant ->
                 variant.outputs.all {
@@ -67,7 +86,7 @@ android {
             shrinkResources false
             debuggable true
             testCoverageEnabled true
-//            signingConfig signingConfigs.release
+            signingConfig signingConfigs.debug
         }
     }
 
