@@ -40,7 +40,7 @@ public class App extends OtaApplication {
     private static final String DEFAULT_PRODUCT_ID = "9732";
     private static final String DEFAULT_PRODUCT_SECRET = "ZWMzZjQ0M2Q0Y2IyZjg2NA==";
 
-    private static IOtaAgent sOtaAgent;
+    private static IOtaAgent sOtaAgent;         // 百度
     private static String sProductId = DEFAULT_PRODUCT_ID;
     private static String sProductSecret = DEFAULT_PRODUCT_SECRET;
 

@@ -173,7 +173,8 @@ public class UpdateService extends Service {
      */
     private static final String[] EXTERNAL_DIRS = {
             "/mnt/usb_storage",
-            "/mnt/media_rw"
+            "/mnt/media_rw",
+            "/mnt/sdcard"
     };
 
     /**
